@@ -1,8 +1,8 @@
 from pathlib import Path
 
-BASE_DIR = Path(__file__).absolute().parent
-MONSTER_ART_DIR = BASE_DIR / "ascii_art" / "monsters"
-TEXT_ART_DIR = BASE_DIR / "ascii_art" / "text"
+_BASE_DIR = Path(__file__).absolute().parent
+MONSTER_ART_DIR = _BASE_DIR / "ascii_art" / "monsters"
+TEXT_ART_DIR = _BASE_DIR / "ascii_art" / "text"
 
 
 def get_art(file_name: str, dir_path: Path) -> str:
